@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {MatButtonModule, MatInputModule, MatListModule} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
+import { ItemlistComponent } from './itemlist/itemlist.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemlistComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatButtonModule,
+    MatInputModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+.itemedit {
+    display: flex;
+    justify-content: center
+}
+#myinput {
+    margin-right: 10px
+}
+.itemedit button {
+    margin-right: 5px
+}
