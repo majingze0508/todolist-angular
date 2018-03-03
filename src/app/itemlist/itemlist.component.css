@@ -8,3 +8,11 @@
 .itemedit button {
     margin-right: 5px
 }
+.itemlist {
+    display: flex;
+    justify-content: center
+}
+mat-list-item:hover {
+    cursor: pointer;
+    color: green
+}

@@ -5,6 +5,7 @@ import {MatButtonModule, MatInputModule, MatListModule} from '@angular/material'
 
 import { AppComponent } from './app.component';
 import { ItemlistComponent } from './itemlist/itemlist.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ItemlistComponent } from './itemlist/itemlist.component';
     BrowserModule,
     MatButtonModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

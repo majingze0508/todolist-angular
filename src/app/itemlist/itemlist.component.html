@@ -1,10 +1,11 @@
 <div class="itemedit">
-  <input matInput placeholder="Favorite food" value="Sushi" id="myinput">
-  <button mat-raised-button color="primary" class="btn-add">Add</button>
-  <button mat-raised-button color="warn" class="btn-del">Delete</button>
+  <input matInput placeholder="please type item" [(ngModel)]="selectedItem" value="selectedItem" id="myinput" >
+  <button mat-raised-button color="primary" class="btn-add" (click)="onAdd()">Add</button>
+  <button mat-raised-button color="warn" class="btn-del" (click)="onDel()">Delete</button>
 </div>
-<mat-list class="itemlist" role="list" *ngIf="items.length > 0">
-    <mat-list-item role="listitem" *ngFor="let item of items">{{item}}</mat-list-item>
-</mat-list>
+<div class="itemlist">
+  <mat-list role="list" *ngIf="items.length > 0">
+    <mat-list-item role="listitem" *ngFor="let item of items" (click)="onSelect(item)">{{item}}</mat-list-item>
+  </mat-list>
 </div>
 
